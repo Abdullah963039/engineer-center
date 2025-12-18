@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export const ServicesView = () => {
   return (
     <div>
-      <section className="pt-16 pb-12">
+      <section className="pt-32 pb-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
