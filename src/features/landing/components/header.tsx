@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { MobileMenu } from "./mobile-menu";
 
 const NAV_LINKS = [
   {
@@ -71,12 +71,12 @@ export function Header() {
           <div className="flex items-center gap-2">
             <ModeToggle />
 
-            <Link href="/submit-project">
-              <Button size="sm">Get Started</Button>
-            </Link>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="size-5" />
-            </Button>
+            {pathname === "/" && (
+              <Link href="/submit-project">
+                <Button size="sm">Get Started</Button>
+              </Link>
+            )}
+            <MobileMenu />
           </div>
         </div>
       </div>

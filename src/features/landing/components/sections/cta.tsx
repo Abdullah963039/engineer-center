@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Award } from "lucide-react";
+import Link from "next/link";
 
 export const CTA = () => {
   return (
@@ -18,12 +19,14 @@ export const CTA = () => {
               a detailed proposal.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button size="lg">
-                Submit Your Idea
-                <ArrowRight className="ml-2 size-4" />
+              <Button size="lg" asChild>
+                <Link href={"/submit-project"}>
+                  Submit Your Idea
+                  <ArrowRight className="ml-2 size-4" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                Schedule Consultation
+              <Button size="lg" variant="outline" asChild>
+                <Link href={"/contact"}>Schedule Consultation</Link>
               </Button>
             </div>
           </CardContent>

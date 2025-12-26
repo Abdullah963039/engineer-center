@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Clock, Target } from "lucide-react";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -29,12 +30,14 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="group">
-              Start Your Project
-              <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
+            <Button size="lg" className="group" asChild>
+              <Link href={"/submit-project"}>
+                Start Your Project
+                <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
             <Button size="lg" variant="outline">
-              View Portfolio
+              <Link href={"/portfolio"}>View Portfolio</Link>
             </Button>
           </div>
 

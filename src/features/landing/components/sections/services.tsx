@@ -55,7 +55,10 @@ export const Services = () => {
                   Mobile App Development
                 </li>
               </ul>
-              <Link href="/services">
+              <Link
+                href="/services?tab=web"
+                className="flex items-center justify-end"
+              >
                 <Button variant="ghost" size="sm" className="mt-4 group/btn">
                   Learn More
                   <ArrowRight className="ml-2 size-4 transition-transform group-hover/btn:translate-x-1" />
@@ -90,7 +93,10 @@ export const Services = () => {
                   3D Visualization & Modeling
                 </li>
               </ul>
-              <Link href="/services">
+              <Link
+                href="/services?tab=architectural"
+                className="flex items-center justify-end"
+              >
                 <Button variant="ghost" size="sm" className="mt-4 group/btn">
                   Learn More
                   <ArrowRight className="ml-2 size-4 transition-transform group-hover/btn:translate-x-1" />
@@ -125,7 +131,10 @@ export const Services = () => {
                   Quality Control & Testing
                 </li>
               </ul>
-              <Link href="/services">
+              <Link
+                href="/services?tab=civil"
+                className="flex items-center justify-end"
+              >
                 <Button variant="ghost" size="sm" className="mt-4 group/btn">
                   Learn More
                   <ArrowRight className="ml-2 size-4 transition-transform group-hover/btn:translate-x-1" />

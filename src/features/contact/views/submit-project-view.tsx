@@ -19,7 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const SubmitProjectView = () => {
-  const [submitted, setSubmitted] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
